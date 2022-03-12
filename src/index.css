@@ -1,13 +1,162 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+    border: 2px solid greenyellow;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("/src/assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.app-window {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(155, 155, 155, 0.164);
+}
+
+.app {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+}
+
+/* CitySearch Component */
+.search-bar {
+    border: 2px solid blue;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+
+    appearance: none;
+    background: none;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+.search-bar input {
+    height: 3em;
+    display: block;
+    padding: 10px;
+    width: 100%;
+
+    appearance: none;
+    background: none;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+/* BasicData Component */
+.basicdata-container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* Today Temps */
+.temp-container {
+    border: 2px solid orchid;
+    width: 40%;
+    height: 8em;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+        /* Current Temp */
+.current-temp {
+    border: 2px solid yellow;
+    width: 70%;
+    height: 100%;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 3em;
+}
+
+        /* Min and Max */
+.min-max {
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+}
+
+    /* DayTime */
+.daytime-container {
+    border: 2px solid pink;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+        /* Day */
+
+
+        /* Time */
+
+/* Current Weather Icon Component */
+.currentweathericon-container {
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+    /* Weather Icon */
+.weather-icon {
+    border: 2px solid purple;
+    height: 30vh;
+}
+
+/* Detailed Data Component */
+.detaileddata-container {
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#wind, #humidity, #rain {
+    border: 2px solid peru;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Forecast */
+.forecast-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+
+.forecast-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast-card img {
+    height: 10vh;
+}
+
+.forecast-card h2 {
+    font-size: 0.7em;
 }
